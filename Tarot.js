@@ -1,5 +1,5 @@
 //Select random card
-let num = Math.floor(Math.random() * 23)
+let num = Math.floor(Math.random() * 22)
     // Select if card is reversed
 let x = Math.floor(Math.random() * 2);
 
