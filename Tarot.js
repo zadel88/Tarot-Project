@@ -1,7 +1,10 @@
+//Select random card
 let num = Math.floor(Math.random() * 23)
+    // Select if card is reversed
 let x = Math.floor(Math.random() * 2);
 
 function reverse(x) {
+    //Function for reverse card
     if (x == 1) {
         x = 'upwards';
     } else {
@@ -10,6 +13,7 @@ function reverse(x) {
     return x;
 }
 switch (num) {
+    // cases to select card
     case 0:
         num = 'Fool';
         break;
@@ -77,7 +81,7 @@ switch (num) {
         num = 'World';
         break;
 }
-
+//Build message
 function reading(num) {
     if (x == 1) {
         console.log('Your card is The ' + num);
@@ -85,4 +89,5 @@ function reading(num) {
         console.log('Your card is The ' + num + ' reversed')
     }
 }
+//output
 reading(num)
